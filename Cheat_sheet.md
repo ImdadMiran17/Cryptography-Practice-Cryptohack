@@ -26,4 +26,5 @@ https://www.geeksforgeeks.org/euclidean-algorithms-basic-and-extended/
 > Fermat’s little theorem states that if `p` is a prime number, then for any integer `a`, the number `a^p – a` is an integer multiple of `p`.
 
 `Here p is a prime number
+
 a^p ≡ a (mod p)`
