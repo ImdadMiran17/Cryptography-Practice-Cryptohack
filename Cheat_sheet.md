@@ -61,7 +61,7 @@ Which means given any integer `a`, calculating `pow(a,(p-1)/2,p)` is enough to d
 
 > The Chinese Remainder Theorem gives a unique solution to a set of linear congruences if their moduli are coprime. This means, that given a set of arbitrary integers a<sub>i</sub>, and pairwise coprime integers n<sub>i</sub>, such that the following linear congruences hold:
 ```
-x ≡ a<sub>1</sub> mod n1
+x ≡ a1 mod n1
 
 x ≡ a2 mod n2
 
@@ -69,7 +69,11 @@ x ≡ a2 mod n2
 
 x ≡ an mod nn
 ```
+There is a unique solution `x ≡ a mod N` where `N = n1 * n2 * ... * nn`.
 
+> "Pairwise coprime integers" means that if we have a set of integers `{n1, n2, ..., ni}`, all pairs of integers selected from the set are coprime: `gcd(ni, nj) = 1`.
+
+[Chinese Remainder Theorem](https://www.geeksforgeeks.org/chinese-remainder-theorem-set-1-introduction/)
 
 
 
