@@ -63,7 +63,7 @@ x ≡ an mod nn
 ```
 There is a unique solution `x ≡ a mod N` where `N = n1 * n2 * ... * nn`.
 
-> "Pairwise coprime integers" means that if we have a set of integers `{n1, n2, ..., ni}`, all pairs of integers selected from the set are coprime: `gcd(ni, nj) = 1`.
+> **Pairwise coprime integers** means that if we have a set of integers `{n1, n2, ..., ni}`, all pairs of integers selected from the set are coprime: `gcd(ni, nj) = 1`.
 
 [Chinese Remainder Theorem](https://www.geeksforgeeks.org/chinese-remainder-theorem-set-1-introduction/)
 
