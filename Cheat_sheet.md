@@ -26,7 +26,6 @@
 > Fermat’s little theorem states that if `p` is a prime number, then for any integer `a`, the number `a^p – a` is an integer multiple of `p`.
 ```
 Here p is a prime number
-
 a^p ≡ a (mod p)
 ```
 
@@ -36,9 +35,7 @@ a^p ≡ a (mod p)
 
 ```
 Quadratic Residue * Quadratic Residue = Quadratic Residue
-
 Quadratic Residue * Quadratic Non-residue = Quadratic Non-residue
-
 Quadratic Non-residue * Quadratic Non-residue = Quadratic Residue
 ```
 
@@ -46,9 +43,7 @@ Quadratic Non-residue * Quadratic Non-residue = Quadratic Residue
 > Legendre's Symbol: `(a / p) ≡ a^(p-1)/2 mod p` obeys:
 ```
 (a / p) = 1 if a is a quadratic residue and a ≢ 0 mod p
-
 (a / p) = -1 if a is a quadratic non-residue mod p
-
 (a / p) = 0 if a ≡ 0 mod p
 ```
 Which means given any integer `a`, calculating `pow(a,(p-1)/2,p)` is enough to determine if a is a quadratic residue.
@@ -62,11 +57,8 @@ Which means given any integer `a`, calculating `pow(a,(p-1)/2,p)` is enough to d
 > The Chinese Remainder Theorem gives a unique solution to a set of linear congruences if their moduli are coprime. This means, that given a set of arbitrary integers a<sub>i</sub>, and pairwise coprime integers n<sub>i</sub>, such that the following linear congruences hold:
 ```
 x ≡ a1 mod n1
-
 x ≡ a2 mod n2
-
 ...
-
 x ≡ an mod nn
 ```
 There is a unique solution `x ≡ a mod N` where `N = n1 * n2 * ... * nn`.
