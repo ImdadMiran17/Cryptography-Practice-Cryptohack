@@ -30,6 +30,37 @@ Here p is a prime number
 a^p ≡ a (mod p)
 ```
 
-https://www.geeksforgeeks.org/fermats-little-theorem/
+[Fermats Little Theorem](https://www.geeksforgeeks.org/fermats-little-theorem/)
 
-> We say that an integer `x` is a Quadratic Residue if there exists an a such that `a^2 = x mod p`. If there is no such solution, then the integer is a Quadratic Non-Residue.
+> We say that an integer `x` is a Quadratic Residue if there exists an a such that `a^2 = x mod p`. If there is no such solution, then the integer is a Quadratic Non-Residue. In other words, `x` is a quadratic residue when it is possible to take the square root of `x` modulo an integer `p`.
+
+```
+Quadratic Residue * Quadratic Residue = Quadratic Residue
+
+Quadratic Residue * Quadratic Non-residue = Quadratic Non-residue
+
+Quadratic Non-residue * Quadratic Non-residue = Quadratic Residue
+```
+
+> The Legendre Symbol gives an efficient way to determine whether an integer is a quadratic residue modulo an odd prime p.
+> Legendre's Symbol: `(a / p) ≡ a^(p-1)/2 mod p` obeys:
+```
+(a / p) = 1 if a is a quadratic residue and a ≢ 0 mod p
+
+(a / p) = -1 if a is a quadratic non-residue mod p
+
+(a / p) = 0 if a ≡ 0 mod p
+```
+Which means given any integer `a`, calculating `pow(a,(p-1)/2,p)` is enough to determine if a is a quadratic residue.
+
+> All primes that aren't 2 are of the form `p ≡ 1 mod 4` or `p ≡ 3 mod 4`, since all odd numbers obey these congruences. In the `p ≡ 3 mod 4` case, a really simple formula for computing square roots can be derived directly from Fermat's little theorem. That leaves us still with the `p ≡ 1 mod 4` case, so a more general algorithm is required. In a congruence of the form `r^2 ≡ a mod p`, Tonelli-Shanks calculates `r`.
+
+> Tonelli-Shanks doesn't work for composite (non-prime) moduli. Finding square roots modulo composites is computationally equivalent to integer factorization.
+
+[Tonelli Shanks](https://www.geeksforgeeks.org/find-square-root-modulo-p-set-2-shanks-tonelli-algorithm/)
+
+> The Chinese Remainder Theorem gives a unique solution to a set of linear congruences if their moduli are coprime. This means, that given a set of arbitrary integers a<sub>i</sub>, and pairwise coprime integers ni, such that the following linear congruences hold:
+
+
+
+
