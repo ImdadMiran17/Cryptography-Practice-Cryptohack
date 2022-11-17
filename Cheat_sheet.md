@@ -23,16 +23,16 @@
 
 > We say that two integers are congruent modulo m if `a ≡ b mod m`. Another way of saying this, is that when we divide the integer `a` by `m`, the remainder is `b`. This tells you that if `m` divides `a` (this can be written as `m | a`) then `a ≡ 0 mod m`.
 
-> Fermat’s little theorem states that if `p` is a prime number, then for any integer `a`, the number `a^p – a` is an integer multiple of `p`.
+> Fermat’s little theorem states that if `p` is a prime number, then for any integer `a`, the number `a<sup>p</sup> – a` is an integer multiple of `p`.
 ```
 Here p is a prime number
 
-a^p ≡ a (mod p)
+a<sup>p</sup> ≡ a (mod p)
 ```
 
 [Fermats Little Theorem](https://www.geeksforgeeks.org/fermats-little-theorem/)
 
-> We say that an integer `x` is a Quadratic Residue if there exists an a such that `a^2 = x mod p`. If there is no such solution, then the integer is a Quadratic Non-Residue. In other words, `x` is a quadratic residue when it is possible to take the square root of `x` modulo an integer `p`.
+> We say that an integer `x` is a Quadratic Residue if there exists an a such that `a<sup>2</sup> = x mod p`. If there is no such solution, then the integer is a Quadratic Non-Residue. In other words, `x` is a quadratic residue when it is possible to take the square root of `x` modulo an integer `p`.
 
 ```
 Quadratic Residue * Quadratic Residue = Quadratic Residue
@@ -43,7 +43,7 @@ Quadratic Non-residue * Quadratic Non-residue = Quadratic Residue
 ```
 
 > The Legendre Symbol gives an efficient way to determine whether an integer is a quadratic residue modulo an odd prime p.
-> Legendre's Symbol: `(a / p) ≡ a^(p-1)/2 mod p` obeys:
+> Legendre's Symbol: `(a / p) ≡ a<sup>(p-1)/2</sup> mod p` obeys:
 ```
 (a / p) = 1 if a is a quadratic residue and a ≢ 0 mod p
 
@@ -59,7 +59,7 @@ Which means given any integer `a`, calculating `pow(a,(p-1)/2,p)` is enough to d
 
 [Tonelli Shanks](https://www.geeksforgeeks.org/find-square-root-modulo-p-set-2-shanks-tonelli-algorithm/)
 
-> The Chinese Remainder Theorem gives a unique solution to a set of linear congruences if their moduli are coprime. This means, that given a set of arbitrary integers a<sub>i</sub>, and pairwise coprime integers ni, such that the following linear congruences hold:
+> The Chinese Remainder Theorem gives a unique solution to a set of linear congruences if their moduli are coprime. This means, that given a set of arbitrary integers a<sub>i</sub>, and pairwise coprime integers n<sub>i</sub>, such that the following linear congruences hold:
 
 
 
