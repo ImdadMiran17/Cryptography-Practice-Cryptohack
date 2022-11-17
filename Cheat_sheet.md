@@ -18,6 +18,11 @@
 
 > Let `a` and `b` be positive integers.The extended Euclidean algorithm is an efficient way to find integers `u,v` such that
 `a * u + b * v = gcd(a,b)`
+
 https://www.geeksforgeeks.org/euclidean-algorithms-basic-and-extended/
 
->
+> We say that two integers are congruent modulo m if `a ≡ b mod m`. Another way of saying this, is that when we divide the integer `a` by `m`, the remainder is `b`. This tells you that if `m` divides `a` (this can be written as `m | a`) then `a ≡ 0 mod m`.
+
+> Fermat’s little theorem states that if `p` is a prime number, then for any integer `a`, the number `a^p – a` is an integer multiple of `p`.
+`Here p is a prime number 
+a^p ≡ a (mod p)`
