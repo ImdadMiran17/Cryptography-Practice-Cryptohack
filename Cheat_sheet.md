@@ -46,7 +46,7 @@ Quadratic Non-residue * Quadratic Non-residue = Quadratic Residue
 (a / p) = -1 if a is a quadratic non-residue mod p
 (a / p) = 0 if a ≡ 0 mod p
 ```
-Which means given any integer `a`, calculating `pow(a,(p-1)/2,p)` is enough to determine if a is a quadratic residue.
+Which means given any integer `a`, calculating `pow(a,(p-1)/2,p)` is enough to determine if `a` is a quadratic residue.
 
 > All primes that aren't 2 are of the form `p ≡ 1 mod 4` or `p ≡ 3 mod 4`, since all odd numbers obey these congruences. In the `p ≡ 3 mod 4` case, a really simple formula for computing square roots can be derived directly from Fermat's little theorem. That leaves us still with the `p ≡ 1 mod 4` case, so a more general algorithm is required. In a congruence of the form `r^2 ≡ a mod p`, Tonelli-Shanks calculates `r`.
 
